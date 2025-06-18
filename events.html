@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gladness House of God | Events</title>
+
+  <!-- Bootstrap + Icons + Animations -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet" />
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .navbar, footer {
+      background-color: #fff;
+    }
+
+    .navbar .nav-link,
+    .navbar-brand,
+    .brand-text span {
+      color: #000 !important;
+    }
+
+    footer {
+      background-color: #000;
+    }
+
+    footer a, footer p {
+      color: #fff !important;
+    }
+
+    .brand-logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .brand-logo img {
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    .brand-text {
+      line-height: 1;
+      font-size: 1.1rem;
+    }
+
+    .brand-text span:first-child {
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .brand-text span:last-child {
+      font-size: 0.85rem;
+    }
+
+    .section-title {
+      font-weight: bold;
+      margin-bottom: 2rem;
+      text-transform: uppercase;
+    }
+
+    .card-img-overlay {
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+    }
+
+    .carousel-caption {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .carousel img {
+      height: 700px;
+      object-fit: cover;
+    }
+
+    section {
+      padding: 3rem 1rem;
+    }
+
+    h2, h4 {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Header -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand brand-logo" href="index.html">
+      <img src="images/logo.png" alt="Logo" />
+      <div class="brand-text">
+        <span>GLADNESS</span>
+        <span>House of God</span>
+      </div>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link active" href="events.html">Upcoming Events</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="give.html">Give</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Upcoming Events Section -->
+<section class="bg-light">
+  <div class="container">
+    <h2 class="text-center section-title">Upcoming Event</h2>
+    <div class="card text-bg-dark border-0">
+      <img src="images/open2.jpg" class="card-img" alt="Open Air Meeting">
+      <div class="card-img-overlay d-flex flex-column justify-content-center text-center">
+        <h3 class="card-title animate__animated animate__fadeInDown">Friday Open Air Meetings</h3>
+        <p class="card-text animate__animated animate__fadeInUp">Join us every Friday at 16h30 at Abaqulusi Plaza as we proclaim the Gospel of Jesus Christ in the open air.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Past Events Section -->
+<section>
+  <div class="container">
+    <h2 class="text-center section-title">Past Events</h2>
+
+    <!-- Baptism Slideshow -->
+    <h4 class="text-center mb-3">Baptism</h4>
+    <div id="baptismCarousel" class="carousel slide mb-5" data-bs-ride="carousel" data-bs-interval="2000">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/baptism1.jpg" class="d-block w-100" alt="Baptism 1">
+        </div>
+        <div class="carousel-item">
+          <img src="images/baptism2.jpg" class="d-block w-100" alt="Baptism 2">
+        </div>
+        <div class="carousel-item">
+          <img src="images/baptism3.jpg" class="d-block w-100" alt="Baptism 3">
+        </div>
+      </div>
+      <div class="carousel-caption d-block">
+        <h5>Baptism Service</h5>
+        <p>Celebrating New Life in Christ</p>
+      </div>
+    </div>
+
+    <!-- Passover Slideshow -->
+    <h4 class="text-center mb-3">Passover Celebration</h4>
+    <div id="passoverCarousel" class="carousel slide mb-5" data-bs-ride="carousel" data-bs-interval="2000">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/passover1.jpg" class="d-block w-100" alt="Passover 1">
+        </div>
+        <div class="carousel-item">
+          <img src="images/passover2.jpg" class="d-block w-100" alt="Passover 2">
+        </div>
+        <div class="carousel-item">
+          <img src="images/passover 3.jpg" class="d-block w-100" alt="Passover 3">
+        </div>
+      </div>
+      <div class="carousel-caption d-block">
+        <h5>Passover Celebration</h5>
+        <p>Remembering the Death & Resurrection of Christ</p>
+      </div>
+    </div>
+
+    <!-- Youth Conference Slideshow -->
+    <h4 class="text-center mb-3">Youth Conference</h4>
+    <div id="youthCarousel" class="carousel slide mb-5" data-bs-ride="carousel" data-bs-interval="2000">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/youth1.jpg" class="d-block w-100" alt="Youth 1">
+        </div>
+        <div class="carousel-item">
+          <img src="images/youth2.jpg" class="d-block w-100" alt="Youth 2">
+        </div>
+        <div class="carousel-item">
+          <img src="images/youth3.jpg" class="d-block w-100" alt="Youth 3">
+        </div>
+        <div class="carousel-item">
+          <img src="images/youth4.jpg" class="d-block w-100" alt="Youth 4">
+        </div>
+        <div class="carousel-item">
+          <img src="images/youth5.jpg" class="d-block w-100" alt="Youth 5">
+        </div>
+        <div class="carousel-item">
+          <img src="images/youth6.jpg" class="d-block w-100" alt="Youth 6">
+        </div>
+        <div class="carousel-item">
+          <img src="images/youth7.jpg" class="d-block w-100" alt="Youth 7">
+        </div>
+        <div class="carousel-item">
+          <img src="images/youth8.jpg" class="d-block w-100" alt="Youth 8">
+        </div>
+      </div>
+      <div class="carousel-caption d-block">
+        <h5>Youth Conference</h5>
+        <p>Empowering the Next Generation</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-white text-center py-3 mt-5">
+  <p>&copy; <span id="year"></span> All rights reserved. Created by 
+    <a href="https://zondojnr.github.io/mvuselelo" class="text-white fw-bold" target="_blank">Mvuselelo</a>
+  </p>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
